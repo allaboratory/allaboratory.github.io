@@ -87,6 +87,12 @@
     a:hover {
       text-decoration: underline;
     }
+
+    #zenodo-stats {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 6px;
+    }
   </style>
 </head>
 <body>
@@ -107,17 +113,38 @@
 
     <p>
       <a href="https://zenodo.org/communities/allaboratory">Zenodo Archive</a> · 
-      <a href="https://orcid.org/0009-0003-4015-9059">ORCID</a> · 
+      <a href="https://orcid.org/0000-0002-XXXX-XXXX">ORCID</a> · 
       <a href="https://github.com/allaboratory">GitHub</a>
     </p>
   </main>
 
   <footer>
     © 2025 Archetypal Linguistics Lab (ALL) · Directed by Arman Revazyan
+    <div id="zenodo-stats">📄 Loading Zenodo metrics...</div>
   </footer>
+
+  <script>
+    async function loadZenodoStats() {
+      try {
+        const response = await fetch('https://zenodo.org/api/records/17566942');
+        const data = await response.json();
+        const views = data.stats?.views ?? "—";
+        const downloads = data.stats?.downloads ?? "—";
+        const updated = new Date(data.updated).toLocaleDateString('en-US', {
+          year: 'numeric', month: 'short'
+        });
+        document.getElementById('zenodo-stats').innerHTML =
+          `📄 <em>Šapattu, Šabbat, and the "Semitic Umbrella"</em> — Views: ${views} · Downloads: ${downloads} <br><span style="font-size:0.85em;">(Updated ${updated})</span>`;
+      } catch (error) {
+        document.getElementById('zenodo-stats').innerText = "📄 Metrics temporarily unavailable.";
+      }
+    }
+    loadZenodoStats();
+  </script>
 
 </body>
 </html>
+
 
 
 
