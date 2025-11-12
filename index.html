@@ -8,51 +8,91 @@
   <style>
     body {
       font-family: "Georgia", serif;
-      background-color: #f9f7f3;
-      color: #1a1a1a;
+      background-color: #f8f5f0;
+      color: #1f1f1f;
       margin: 0;
       padding: 0;
       line-height: 1.6;
     }
     header {
-      background-color: #e8e3da;
       text-align: center;
-      padding: 40px 20px;
-      border-bottom: 2px solid #d1c7b7;
+      padding: 60px 20px;
+      background-color: #eae5dc;
+      border-bottom: 2px solid #d4cbb8;
     }
     header h1 {
-      font-size: 2.2em;
       margin: 0;
-      color: #2c2a29;
+      font-size: 2.4em;
+      color: #2b2a28;
     }
     header p {
-      font-style: italic;
       margin-top: 10px;
       color: #5a5246;
+      font-style: italic;
     }
     main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
     section {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
     h2 {
+      font-size: 1.6em;
       border-bottom: 2px solid #d1c7b7;
       padding-bottom: 8px;
+      margin-bottom: 25px;
       color: #3a3a3a;
     }
-    a {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #fffdfa;
+      border: 1px solid #e0d9cd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #2e2d2b;
+    }
+    .card p {
+      font-size: 0.95em;
+      color: #4d4740;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 8px;
       color: #3d3b8e;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
+    .card a:hover {
       text-decoration: underline;
+    }
+    ul.news {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul.news li {
+      margin-bottom: 8px;
+    }
+    ul.news strong {
+      color: #3d3b8e;
     }
     .links {
       text-align: center;
-      margin: 30px 0;
+      margin-top: 40px;
     }
     .links a {
       display: inline-block;
@@ -62,13 +102,18 @@
       border-radius: 6px;
       background-color: #f2eee8;
       font-size: 0.95em;
+      text-decoration: none;
+      color: #3d3b8e;
+    }
+    .links a:hover {
+      background-color: #e6dfd4;
     }
     footer {
       text-align: center;
       font-size: 0.85em;
       color: #5a5246;
       border-top: 1px solid #d1c7b7;
-      padding: 20px;
+      padding: 25px;
       background-color: #f4f0eb;
     }
   </style>
@@ -82,37 +127,76 @@
 
   <main>
     <section>
-      <h2>Mission</h2>
-      <p>
-        The <strong>Archetypal Linguistics Lab (ALL)</strong> explores the deep structures of language, myth, and cognition,
-        bridging philology, semiotics, and cognitive science.
-        The Lab develops the framework of <em>Archetypal Linguistics</em> — a methodological synthesis of internal reconstruction,
-        cognitive semantics, and symbolic archaeology, with particular focus on the Armenian linguistic continuum
-        and its ancient Near Eastern context.
-      </p>
+      <h2>Latest Research</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Šapattu, Šabbat, and the "Semitic Umbrella"</h3>
+          <p>Reassessing the origins of the Sabbath concept and its Armenian parallels within the cosmological and linguistic continuum.</p>
+          <a href="https://doi.org/10.5281/zenodo.17566942" target="_blank">Read on Zenodo →</a>
+        </div>
+        <div class="card">
+          <h3>The Principle of Internal Reconstruction</h3>
+          <p>Methodological shift in etymological research through systemic lexical analysis within the Armenian language.</p>
+          <a href="https://doi.org/10.5281/zenodo.17587219" target="_blank">Read on Zenodo →</a>
+        </div>
+        <div class="card">
+          <h3>The “Crested Head” Sign of the Phaistos Disc</h3>
+          <p>Archaeological and epigraphic evidence linking Cretan and Armenian highland iconography in the Late Bronze Age.</p>
+          <a href="https://doi.org/10.5281/zenodo.17567421" target="_blank">Read on Zenodo →</a>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Publications and Research</h2>
+      <h2>News & Updates</h2>
+      <ul class="news">
+        <li><strong>Nov 2025:</strong> Integration of all publications into the Zenodo community “Archetypal Linguistics Lab (ALL)”.</li>
+        <li><strong>Oct 2025:</strong> Publication of “The Principle of Internal Reconstruction”.</li>
+        <li><strong>Sep 2025:</strong> Launch of the “Archetypal Linguistics Manifesto (ALL Series)” on Zenodo.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Phaistos Disc Visual Corpus</h3>
+          <p>Digital reconstruction and semiotic mapping of the Phaistos Disc symbols.</p>
+          <a href="https://github.com/allaboratory/phaistos-disc" target="_blank">View Project →</a>
+        </div>
+        <div class="card">
+          <h3>Armenian Lexical Maps</h3>
+          <p>Interactive visualization of semantic clusters in the Armenian lexicon.</p>
+          <a href="https://github.com/allaboratory/armenian-lexical-maps" target="_blank">View Project →</a>
+        </div>
+        <div class="card">
+          <h3>Hašhur Armanu Dataset</h3>
+          <p>A comparative corpus of ancient lexical materials reflecting Armenian–Akkadian continuity.</p>
+          <a href="https://github.com/allaboratory/hashhur-armanu" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Manifesto Series</h2>
       <p>
-        All official research papers and series publications are archived in our Zenodo community:
+        The <strong>Archetypal Linguistics Manifesto (ALL Series)</strong> establishes the theoretical foundations
+        of Archetypal Linguistics as an interdisciplinary field.
+        Each part develops one of the core principles—etymological, cognitive, or symbolic.
       </p>
       <p class="links">
-        <a href="https://zenodo.org/communities/allaboratory" target="_blank">Zenodo Community</a>
-        <a href="https://orcid.org/0009-0003-4015-9059" target="_blank">ORCID Profile</a>
-        <a href="https://github.com/allaboratory" target="_blank">GitHub Repositories</a>
-      </p>
-      <p>
-        The main publication series — <strong>Archetypal Linguistics Manifesto (ALL Series)</strong> — presents a structured development
-        of the Lab’s research in linguistics, cognitive theory, and symbolic interpretation.
+        <a href="https://zenodo.org/communities/allaboratory?q=manifesto" target="_blank">View Manifesto Series</a>
       </p>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p>
-        📧 <a href="mailto:allaboratory@proton.me">allaboratory@proton.me</a>
-      </p>
+      <p>📧 <a href="mailto:allaboratory@proton.me">allaboratory@proton.me</a></p>
+      <div class="links">
+        <a href="https://zenodo.org/communities/allaboratory" target="_blank">Zenodo</a>
+        <a href="https://orcid.org/0000-0002-XXXX-XXXX" target="_blank">ORCID</a>
+        <a href="https://github.com/allaboratory" target="_blank">Source & Data (GitHub)</a>
+      </div>
     </section>
   </main>
 
@@ -121,4 +205,5 @@
   </footer>
 </body>
 </html>
+
 
