@@ -16,7 +16,7 @@
 
     header {
       background-color: #ffffff;
-      padding: 35px 0;
+      padding: 40px 0;
       text-align: center;
       border-bottom: 1px solid #e4e4e4;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -25,22 +25,29 @@
     .header-logo {
       display: inline-flex;
       align-items: center;
-      gap: 16px;
+      gap: 18px;
     }
 
     .header-logo img {
-      width: 48px;
+      width: 56px;
       height: auto;
-      opacity: 0.95;
-      filter: drop-shadow(0 0 2px rgba(0,0,0,0.2));
+      opacity: 0.97;
+      filter:
+        drop-shadow(0 1px 1px rgba(0,0,0,0.25))
+        drop-shadow(0 2px 3px rgba(0,0,0,0.15))
+        drop-shadow(0 0 4px rgba(0,0,0,0.1));
+      transform: translateY(1px);
     }
 
     .header-logo h1 {
       font-size: 28px;
-      color: #1a1a1a;
+      color: #111;
       margin: 0;
-      text-shadow: 0 0 4px rgba(0,0,0,0.15);
       letter-spacing: 0.3px;
+      text-shadow:
+        0 1px 1px rgba(0,0,0,0.2),
+        0 2px 3px rgba(0,0,0,0.12),
+        0 0 6px rgba(0,0,0,0.08);
     }
 
     main {
@@ -86,7 +93,7 @@
 
   <header>
     <div class="header-logo">
-      <img src="emblem.png" alt="ALL emblem">
+      <img src="36 AM.png" alt="ALL emblem">
       <h1>Archetypal Linguistics Lab (ALL)</h1>
     </div>
   </header>
