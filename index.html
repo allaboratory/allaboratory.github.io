@@ -1,149 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Archetypal Linguistics Lab (ALL)</title>
-  <meta name="description" content="Official website of the Archetypal Linguistics Lab (ALL) directed by Arman Revazyan">
+  <link rel="icon" href="ALL_logo_compressed.jpg" type="image/jpeg">
   <style>
-    :root{
-      --brand:#2563EB;        /* синий акцент */
-      --brand-dark:#1e3a8a;   /* заголовки */
-      --bg:#fafafa;
-      --text:#1f2937;
-      --muted:#6b7280;
-      --card:#ffffff;
-      --line:#e5e7eb;
-      --radius:16px;
-      --shadow:0 6px 24px rgba(0,0,0,.06);
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f9f7f3;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{
-      background:var(--brand);
-      color:#fff;
-      padding:48px 16px;
-      text-align:center
+    header {
+      background-color: #e8e3da;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 2px solid #d1c7b7;
     }
-    header h1{margin:0 0 8px;font-size:28px}
-    header p{margin:0;opacity:.95}
-    main{
-      max-width:1100px;margin:32px auto;padding:0 16px;
-      display:grid;gap:24px;grid-template-columns:280px 1fr
+    header h1 {
+      font-size: 2.2em;
+      margin: 0;
+      color: #2c2a29;
     }
-    @media (max-width:900px){main{grid-template-columns:1fr}}
-    .sidebar{
-      background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-      padding:18px;box-shadow:var(--shadow);height:max-content
+    header p {
+      font-style: italic;
+      margin-top: 10px;
+      color: #5a5246;
     }
-    .sidebar h3{margin:.25rem 0 .75rem;color:var(--brand-dark);font-size:18px}
-    .nav a{display:block;padding:6px 0}
-    .external a{display:block;margin:6px 0}
-    section{
-      background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-      padding:22px;box-shadow:var(--shadow);margin-bottom:24px
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    h2{margin:0 0 .75rem;color:var(--brand-dark);font-size:22px}
-    ul{margin:.5rem 0 0 1.1rem}
-    .doi{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;font-size:95%;color:#374151}
-    footer{
-      margin:24px auto 48px;max-width:1100px;padding:0 16px;color:var(--muted);text-align:center
+    section {
+      margin-bottom: 40px;
     }
-    .badge{
-      display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;
-      padding:6px 10px;margin:4px 6px 0 0
+    h2 {
+      border-bottom: 2px solid #d1c7b7;
+      padding-bottom: 8px;
+      color: #3a3a3a;
     }
-    .pill{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:999px;padding:4px 8px;font-size:12px;margin-right:6px}
-    .cta{
-      display:inline-block;padding:10px 14px;border-radius:10px;background:#111827;color:#fff;
-      text-decoration:none;margin-top:8px
+    a {
+      color: #3d3b8e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .links {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .links a {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 8px 14px;
+      border: 1px solid #c8c0b5;
+      border-radius: 6px;
+      background-color: #f2eee8;
+      font-size: 0.95em;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #5a5246;
+      border-top: 1px solid #d1c7b7;
+      padding: 20px;
+      background-color: #f4f0eb;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Archetypal Linguistics Lab (ALL)</h1>
-    <p>Independent research initiative directed by <strong>Arman Revazyan</strong></p>
+    <p>Independent Research Initiative founded by Arman Revazyan</p>
   </header>
 
   <main>
-    <aside class="sidebar">
-      <h3>Navigation</h3>
-      <div class="nav">
-        <a href="#about">About</a>
-        <a href="#research">Research Areas</a>
-        <a href="#publications">Publications</a>
-        <a href="#news">News & Updates</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <h3 style="margin-top:1.25rem">External</h3>
-      <div class="external">
-        <a href="https://zenodo.org/communities/archetypal-linguistics-lab" target="_blank" rel="noopener">Zenodo Community</a>
-        <a href="https://github.com/allaboratory" target="_blank" rel="noopener">GitHub Profile</a>
-        <a href="mailto:archetypallingusiticslab-ui@gmail.com">Email</a>
-      </div>
-      <h3 style="margin-top:1.25rem">Topics</h3>
-      <div>
-        <span class="pill">Cognitive Semantics</span>
-        <span class="pill">Armenian Linguistics</span>
-        <span class="pill">ANE Languages</span>
-      </div>
-    </aside>
+    <section>
+      <h2>Mission</h2>
+      <p>
+        The <strong>Archetypal Linguistics Lab (ALL)</strong> explores the deep structures of language, myth, and cognition,
+        bridging philology, semiotics, and cognitive science.
+        The Lab develops the framework of <em>Archetypal Linguistics</em> — a methodological synthesis of internal reconstruction,
+        cognitive semantics, and symbolic archaeology, with particular focus on the Armenian linguistic continuum
+        and its ancient Near Eastern context.
+      </p>
+    </section>
 
-    <div>
-      <section id="about">
-        <h2>About</h2>
-        <p>The <strong>Archetypal Linguistics Lab (ALL)</strong> explores the cognitive, structural, and historical foundations of language through the lens of <em>archetypal semantics</em>, with a focus on the <strong>Armenian linguistic system</strong> and its connections with Sumerian, Akkadian, Luwian, Hurrian, and other ancient Near Eastern languages.</p>
-        <span class="badge">Method: Internal Reconstruction</span>
-        <span class="badge">Focus: Archetypes of Form, Number, Order</span>
-      </section>
+    <section>
+      <h2>Publications and Research</h2>
+      <p>
+        All official research papers and series publications are archived in our Zenodo community:
+      </p>
+      <p class="links">
+        <a href="https://zenodo.org/communities/allaboratory" target="_blank">Zenodo Community</a>
+        <a href="https://orcid.org/0000-0002-XXXX-XXXX" target="_blank">ORCID Profile</a>
+        <a href="https://github.com/allaboratory" target="_blank">GitHub Repositories</a>
+      </p>
+      <p>
+        The main publication series — <strong>Archetypal Linguistics Manifesto (ALL Series)</strong> — presents a structured development
+        of the Lab’s research in linguistics, cognitive theory, and symbolic interpretation.
+      </p>
+    </section>
 
-      <section id="research">
-        <h2>Research Areas</h2>
-        <ul>
-          <li><strong>Cognitive Semantics & Structural Inversion</strong> — systemic oppositions and phonosemantic mechanisms.</li>
-          <li><strong>Armenian Etymology & Historical Linguistics</strong> — reassessing IE/Iranian hypotheses via internal reconstruction.</li>
-          <li><strong>Archetypal Symbolism in Language</strong> — ancient signs and cosmological motifs (Šapattu, Sebittu, Ašxarh, Sapat).</li>
-        </ul>
-      </section>
-
-      <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-          <li><strong>2025:</strong> The Archetypal Linguistics Manifesto — <span class="doi">DOI: coming soon</span></li>
-          <li><strong>2025:</strong> Cognitive Semantics and Structural Inversion in the Armenian Language — <span class="doi">DOI: coming soon</span></li>
-          <li><strong>2024:</strong> Reassessing Iranian Etymology in Armenian — <span class="doi">DOI: coming soon</span></li>
-          <li><strong>2025:</strong> The "Crested Head" Sign of the Phaistos Disc — <a class="doi" href="https://doi.org/10.5281/zenodo.17566942" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.17566942</a></li>
-        </ul>
-        <a class="cta" href="https://zenodo.org/communities/archetypal-linguistics-lab" target="_blank" rel="noopener">View all on Zenodo →</a>
-      </section>
-
-      <section id="news">
-        <h2>News & Updates</h2>
-        <ul>
-          <li><strong>Nov 2025:</strong> ALL website launched at <a href="https://allaboratory.github.io/" target="_blank" rel="noopener">allaboratory.github.io</a>.</li>
-          <li><strong>Nov 2025:</strong> New article DOI published on Zenodo (see Publications).</li>
-        </ul>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <ul>
-          <li><strong>Email:</strong> <a href="mailto:archetypallingusiticslab-ui@gmail.com">archetypallingusiticslab-ui@gmail.com</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/allaboratory" target="_blank" rel="noopener">allaboratory</a></li>
-          <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-XXXX-XXXX" target="_blank" rel="noopener">0000-0002-XXXX-XXXX</a></li>
-          <li><strong>Zenodo:</strong> <a href="https://zenodo.org/communities/archetypal-linguistics-lab" target="_blank" rel="noopener">Archetypal Linguistics Lab Community</a></li>
-        </ul>
-      </section>
-    </div>
+    <section>
+      <h2>Contact</h2>
+      <p>
+        📧 <a href="mailto:allaboratory@proton.me">allaboratory@proton.me</a>
+      </p>
+    </section>
   </main>
 
   <footer>
-    © 2025 Archetypal Linguistics Lab (ALL). Hosted on GitHub Pages.
+    <p>© 2025 Archetypal Linguistics Lab (ALL). Licensed under CC BY 4.0.</p>
   </footer>
-
 </body>
 </html>
+
