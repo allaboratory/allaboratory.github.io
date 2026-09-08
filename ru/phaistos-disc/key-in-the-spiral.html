@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>КЛЮЧ В СПИРАЛИ: Поле A13 и трёхчленная структура стороны A Фестского диска — Archetypal Linguistics Lab</title>
+  <meta name="description" content="Русская версия исследования Армана Ревазяна о поле A13 Фестского диска, симметрии 30:30 и трёхчленной структуре стороны A.">
+  <link rel="canonical" href="https://allaboratory.github.io/ru/phaistos-disc/key-in-the-spiral.html">
+  <link rel="icon" type="image/png" href="/36 AM.png">
+
+  <meta name="citation_title" content="КЛЮЧ В СПИРАЛИ. Поле A13 и трёхчленная структура стороны A Фестского диска">
+  <meta name="citation_author" content="Arman Revazyan">
+  <meta name="citation_publication_date" content="2026/09/08">
+  <meta name="citation_doi" content="10.5281/zenodo.22653475">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "КЛЮЧ В СПИРАЛИ: Поле A13 и трёхчленная структура стороны A Фестского диска",
+    "author": {"@type": "Person", "name": "Arman Revazyan"},
+    "datePublished": "2026-09-08",
+    "inLanguage": "ru",
+    "publisher": {"@type": "Organization", "name": "Archetypal Linguistics Lab (ALL)"},
+    "sameAs": "https://doi.org/10.5281/zenodo.22653475"
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: #202020;
+      background: #f5f4f1;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.72;
+      font-size: 18px;
+    }
+
+    a {
+      color: #173f73;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: #0d2747; }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #dedbd5;
+    }
+
+    .site-header-inner {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 92px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border: 1px solid #e3e0db;
+      text-decoration: none;
+      font: 32px/1 Georgia, serif;
+      color: #4a4a4a;
+      background: #fafafa;
+    }
+
+    .lab-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111;
+      text-decoration: none;
+    }
+
+    main {
+      width: min(920px, calc(100% - 40px));
+      margin: 54px auto 80px;
+      background: #fff;
+      border: 1px solid #e0ddd7;
+      box-shadow: 0 8px 28px rgba(0,0,0,.035);
+    }
+
+    .article-header {
+      padding: 46px 68px 42px;
+      border-bottom: 1px solid #e5e2dc;
+    }
+
+    .kicker {
+      margin: 0 0 12px;
+      font-size: 16px;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+      color: #67635d;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      color: #111;
+      font-size: clamp(32px, 4vw, 44px);
+      line-height: 1.08;
+      letter-spacing: -.02em;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 14px 0 26px;
+      font-size: clamp(18px, 2.2vw, 23px);
+      line-height: 1.28;
+      color: #3d3a36;
+    }
+
+    .author {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .affiliation {
+      margin: 2px 0 0;
+      color: #66615a;
+      font-size: 16px;
+    }
+
+    .publication-meta {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid #ece9e3;
+      display: grid;
+      gap: 5px;
+      font-size: 15px;
+      color: #5e5a54;
+    }
+
+    .actions {
+      margin-top: 26px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid #173f73;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .button.primary {
+      color: #fff;
+      background: #173f73;
+    }
+
+    .button.secondary {
+      color: #173f73;
+      background: #fff;
+    }
+
+    .front-matter {
+      padding: 42px 68px 20px;
+    }
+
+    .abstract-box {
+      border-left: 4px solid #bbb3a6;
+      padding: 2px 0 2px 22px;
+      margin-bottom: 28px;
+    }
+
+    .abstract-box h2 {
+      border: 0;
+      margin: 0 0 12px;
+      padding: 0;
+      font-size: 22px;
+    }
+
+    .abstract-box p {
+      margin: 0;
+      text-align: justify;
+    }
+
+    .keywords {
+      font-size: 16px;
+      color: #504d48;
+    }
+
+    details {
+      margin-top: 28px;
+      padding: 16px 18px;
+      border: 1px solid #e1ded8;
+      background: #faf9f6;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    details p {
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: justify;
+    }
+
+    .toc {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid #e7e4de;
+    }
+
+    .toc h2 {
+      border: 0;
+      margin: 0 0 16px;
+      padding: 0;
+      font-size: 22px;
+    }
+
+    .toc ol {
+      columns: 2;
+      column-gap: 42px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .toc li {
+      break-inside: avoid;
+      margin: 0 0 9px;
+    }
+
+    .toc a { text-decoration: none; }
+
+    .article-body {
+      padding: 18px 68px 58px;
+    }
+
+    .article-body p {
+      margin: 0 0 1.05em;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .article-body h2 {
+      margin: 2.25em 0 .8em;
+      padding-top: 18px;
+      border-top: 1px solid #ebe8e2;
+      font-size: 26px;
+      line-height: 1.28;
+      color: #171717;
+    }
+
+    .article-body h2 span {
+      color: #777169;
+      font-weight: 400;
+    }
+
+    .article-list,
+    .numbered-list {
+      margin: .5em 0 1.25em;
+      padding-left: 1.35em;
+    }
+
+    .article-list li,
+    .numbered-list li {
+      margin: .4em 0;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .scheme {
+      margin: 1.35em auto;
+      padding: 15px 20px;
+      max-width: 720px;
+      text-align: center;
+      background: #f7f5f1;
+      border: 1px solid #e5e0d8;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: .01em;
+    }
+
+    .figure {
+      margin: 44px auto 52px;
+      text-align: center;
+    }
+
+    .figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid #e0ddd7;
+      background: #fff;
+    }
+
+    .figure-wide { max-width: 820px; }
+
+    figcaption,
+    .table-caption {
+      margin-top: 13px;
+      color: #57524c;
+      font-size: 14px;
+      line-height: 1.48;
+      text-align: left;
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin: 28px 0 38px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+      width: 100%;
+      min-width: 640px;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.35;
+      background: #fff;
+    }
+
+    th,
+    td {
+      border: 1px solid #7f7f7f;
+      padding: 7px 9px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      background: #d9e2f3;
+      font-weight: 700;
+    }
+
+    td.row-label { background: #f2f2f2; font-weight: 700; }
+    td.a13-row { background: #fce4d6; font-weight: 700; }
+    td.repeat-blue { background: #ddebf7; }
+    td.repeat-purple { background: #e4dfec; }
+    td.repeat-green { background: #e2f0d9; }
+    td.repeat-yellow { background: #fff2cc; }
+    td.repeat-peach { background: #fce4d6; }
+
+    .field-id {
+      display: block;
+      font-weight: 700;
+    }
+
+    .field-seq {
+      display: block;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .notes {
+      margin-top: 2.25em;
+      padding-top: 18px;
+      border-top: 1px solid #ebe8e2;
+    }
+
+    .notes h2 {
+      margin: 0 0 18px;
+      font-size: 26px;
+    }
+
+    .notes-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .notes-list li {
+      margin: 0 0 13px;
+      font-size: 15px;
+      line-height: 1.55;
+      text-align: justify;
+    }
+
+    .references {
+      padding: 0 68px 54px;
+    }
+
+    .references h2 {
+      margin: 0 0 22px;
+      padding-top: 32px;
+      border-top: 2px solid #34312d;
+      font-size: 28px;
+    }
+
+    .references-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .references-list li {
+      margin: 0 0 14px;
+      font-size: 15px;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+
+    .download-panel {
+      margin: 0 68px 62px;
+      padding: 28px;
+      border: 1px solid #d8d4cd;
+      background: #f8f7f4;
+    }
+
+    .download-panel h2 {
+      margin: 0 0 8px;
+      font-size: 24px;
+    }
+
+    .download-panel p {
+      margin: 0 0 18px;
+      color: #5e5a54;
+      font-size: 15px;
+    }
+
+    footer {
+      width: min(920px, calc(100% - 40px));
+      margin: -52px auto 50px;
+      text-align: center;
+      color: #77716a;
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px) {
+      body { font-size: 17px; }
+      .site-header-inner, main, footer { width: min(100% - 22px, 920px); }
+      .site-header-inner { min-height: 74px; }
+      .lab-name { font-size: 20px; }
+      .article-header, .front-matter, .article-body, .references {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .article-header { padding-top: 38px; }
+      .toc ol { columns: 1; }
+      .download-panel { margin-left: 24px; margin-right: 24px; }
+      .article-body p { text-align: left; }
+      .article-list li, .numbered-list li, .notes-list li { text-align: left; }
+      table { font-size: 13px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .site-header, .actions, .toc, .download-panel, footer { display: none !important; }
+      main { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .article-header, .front-matter, .article-body, .references {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      a { color: inherit; text-decoration: none; }
+      .figure, .table-wrap { break-inside: avoid; }
+      h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="back" href="/ru/phaistos-disc/" aria-label="Назад к разделу Фестский диск">‹</a>
+      <a class="lab-name" href="/ru/">Archetypal Linguistics Lab (ALL)</a>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-header">
+      <p class="kicker">КЛЮЧ В СПИРАЛИ</p>
+      <h1>Поле A13 и трёхчленная структура стороны A Фестского диска</h1>
+
+      <p class="author">Арман Ревазян</p>
+      <p class="affiliation">Archetypal Linguistics Lab (ALL) — Independent Research Initiative</p>
+
+      <div class="publication-meta">
+        <div><strong>Русская версия:</strong> сентябрь 2026</div>
+        <div><strong>Английская публикация:</strong> <em>Key in the Spiral: Field A13 and the Triadic Structure of Side A of the Phaistos Disc</em>, Version v1</div>
+        <div><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.22653475" target="_blank" rel="noopener">10.5281/zenodo.22653475</a></div>
+      </div>
+
+      <div class="actions">
+        <a class="button primary" href="key-in-the-spiral-ru.pdf">Скачать PDF</a>
+        <a class="button secondary" href="https://doi.org/10.5281/zenodo.22653475" target="_blank" rel="noopener">English version on Zenodo</a>
+      </div>
+    </header>
+
+    <section class="front-matter">
+      <div class="abstract-box">
+        <h2>Аннотация</h2>
+        <p>Статья продолжает структурное исследование Фестского диска, сосредоточенное на анализе поля A13 стороны A. Показано, что исключение A13 устраняет числовую асимметрию сторон, восстанавливая регулярный счёт 30:30. Предложенная на основе параллелей бронзового века интерпретация двух знаков A13 задаёт трёхчленный способ группировки материала, применение которого приводит к матрице 10×3, в которой все точные повторы демонстрируют строгую вертикальную конгруэнтность. Рассматриваются альтернативные интерпретации результата, пределы вывода и условия верификации модели.</p>
+      </div>
+
+      <p class="keywords"><strong>Ключевые слова:</strong> Фестский диск; A13; структурный анализ; знак 39; знак 11; трёхчленность; qaštu; метатекст; матрица 10×3.</p>
+
+      <details>
+        <summary>English abstract</summary>
+        <p><strong>KEY IN THE SPIRAL: FIELD A13 AND THE TRIADIC STRUCTURE OF SIDE A OF THE PHAISTOS DISC</strong></p>
+        <p>This article examines field A13 on Side A of the Phaistos Disc as a structurally anomalous element. Wolfgang Reczko independently identified the same sector as a small additional field of irregular position and form. If A13 is provisionally removed from the primary field count, the numerical asymmetry between the two sides disappears: Side A and Side B each contain 30 fields. The paper then asks whether the two signs within A13 may encode a principle governing the organization of the remaining sequence. A working interpretation of sign 39 as “three” and sign 11 as “arc” yields a triadic grouping. Applied without reordering the sequence, this produces a 10×3 matrix in which all exact repeated fields on Side A retain the same column position. The result is tested against alternative segmentations, a technical-insertion hypothesis, an immanent-rhythm hypothesis, and the structure of Side B. Akkadian qaštu “bow,” attested in Old Babylonian mathematics as a geometric figure and interpreted in lexical tradition as “arc as a shape,” provides a chronologically relevant parallel for the semantic step proposed for sign 11. The model is not a decipherment of the Disc but a falsifiable structural hypothesis whose most direct independent test is supplied by the other occurrences of sign 39.</p>
+        <p><strong>Keywords:</strong> Phaistos Disc; A13; structural analysis; sign 39; sign 11; triadic structure; qaštu; metatext; 10×3 matrix.</p>
+      </details>
+
+      <nav class="toc" aria-label="Содержание статьи">
+        <h2>Содержание</h2>
+        <ol>
+          <li><a href="#sec-1"><span>1.</span> Введение</a></li>
+          <li><a href="#sec-2"><span>2.</span> Геометрическая аномалия A13</a></li>
+          <li><a href="#sec-3"><span>3.</span> Структурный эксперимент: исключение A13</a></li>
+          <li><a href="#sec-4"><span>4.</span> От аномального поля к гипотезе ключа</a></li>
+          <li><a href="#sec-5"><span>5.</span> Знак 39: трёхчастность</a></li>
+          <li><a href="#sec-6"><span>6.</span> Знак 11: исходная идентификация</a></li>
+          <li><a href="#sec-7"><span>7.</span> Аккадское qaštu: лук как геометрическая форма</a></li>
+          <li><a href="#sec-8"><span>8.</span> Непрямое использование пиктограмм</a></li>
+          <li><a href="#sec-9"><span>9.</span> Сочетание 39–11</a></li>
+          <li><a href="#sec-10"><span>10.</span> Применение формулы</a></li>
+          <li><a href="#sec-11"><span>11.</span> Точные повторы</a></li>
+          <li><a href="#sec-12"><span>12.</span> Блок A14–A22</a></li>
+          <li><a href="#sec-13"><span>13.</span> Контроль других разбиений</a></li>
+          <li><a href="#sec-14"><span>14.</span> Что именно представляет собой A13?</a></li>
+          <li><a href="#sec-15"><span>15.</span> Альтернатива технической вставки</a></li>
+          <li><a href="#sec-16"><span>16.</span> Сторона B</a></li>
+          <li><a href="#sec-17"><span>17.</span> Число 30 и календарная интерпретация</a></li>
+          <li><a href="#sec-18"><span>18.</span> Структурная ремарка: 13, 12 и 30</a></li>
+          <li><a href="#sec-19"><span>19.</span> Проверяемое предсказание и проблема прагматики</a></li>
+          <li><a href="#sec-20"><span>20.</span> Пределы вывода</a></li>
+          <li><a href="#sec-21"><span>21.</span> Заключение</a></li>
+        </ol>
+      </nav>
+    </section>
+
+    <article class="article-body">
+      <h2 id="sec-1"><span>1.</span> Введение</h2>
+      <p>Предыдущая работа этой серии исходила из методического принципа: физическая и композиционная организация памятника рассматривается до попытки определить значение отдельных знаков. Для недешифрованного текста этот порядок принципиален, так как число полей, их положение и повторяемость можно устанавливать независимо от языка.</p>
+      <p>На стороне A в пределах внешнего оборота возникает структурная аномалия: после регулярного ряда полей A1–A12 располагается небольшое поле A13, занимающее место перехода к внутреннему витку. Его статус является объектом данного исследования.</p>
+
+      <h2 id="sec-2"><span>2.</span> Геометрическая аномалия A13</h2>
+      <figure class="figure figure-wide">
+        <img src="key-in-the-spiral-a13.png" alt="Фестский диск и увеличенный фрагмент поля A13 на стороне A" loading="lazy">
+        <figcaption><strong>Рис. 1.</strong> Положение поля A13 на стороне A Фестского диска. Стрелкой и увеличенным фрагментом отмечен участок геометрического разрыва на границе между внешним ободом и внутренней спиралью.</figcaption>
+      </figure>
+      <p>Особое положение этого участка независимо выделил Wolfgang Reczko, разделивший каждую сторону диска на 12 полей внешнего обода и 18 полей внутренней спирали. На стороне A при этом остаётся одно дополнительное малое поле (As18b / A13).</p>
+      <p>Структура сторон описывается формулой:</p>
+      <ul class="article-list">
+        <li>Сторона A: 12 + 1 + 18 = 31</li>
+        <li>Сторона B: 12 + 18 = 30</li>
+      </ul>
+      <p>Следовательно, вся числовая асимметрия сосредоточена в одном поле, пространственная и арифметическая исключительность которого совпадают в точке стыка витков.</p>
+
+      <h2 id="sec-3"><span>3.</span> Структурный эксперимент: исключение A13</h2>
+      <p>Если временно исключить A13 из основного счёта, не меняя ничего другого, исходная асимметрия 31:30 превращается в строгую симметрию 30:30.</p>
+      <p>Иными словами, 61 физически выделенное поле допускает представление как 60 основных полей + A13. Значимость результата заключается в его первичности: поле A13 было изолировано по независимым геометрическим основаниям до всякого поиска числа 30.</p>
+
+      <h2 id="sec-4"><span>4.</span> От аномального поля к гипотезе ключа</h2>
+      <p>Структура 30:30 показывает, что A13 — единственный элемент, исключение которого восстанавливает симметричный счёт сторон. В этом отношении A13 можно уподобить ключу, вставленному в замок: не по внешней форме, а по предполагаемой функции. Будучи отделённым от основной последовательности и расположенным в точке структурного перехода, оно может содержать принцип, позволяющий раскрыть организацию остальных полей стороны A.</p>
+      <p>Возникает проверяемый вопрос: содержит ли A13 (состоящее из знаков 39 и 11) информацию, связанную с организацией остальных тридцати полей стороны A?</p>
+
+      <h2 id="sec-5"><span>5.</span> Знак 39: трёхчастность</h2>
+      <p>Первый знак (PHAISTOS DISC SIGN LILY) имеет отчётливо трёхчастную композицию. Ботаническая идентификация здесь вторична. Наиболее простая количественная гипотеза предполагает чтение формы как числового указателя: 39 → «три». Поскольку знак встречается на диске неоднократно, это предположение подлежит независимой проверке (см. Раздел 19).</p>
+
+      <h2 id="sec-6"><span>6.</span> Знак 11: исходная идентификация</h2>
+      <p>Знак 11 является единственным знаком репертуара Фестского диска, засвидетельствованным только один раз. Luigi Pernier определил его как «вогнуто-выпуклый лук скифского типа с ослабленной тетивой» (PHAISTOS DISC SIGN BOW). Уникальность знака не была проблемой для древнего адресата, владеющего системой письма, однако требует от современного исследователя поиска семантических возможностей слова «лук» в релевантных древних традициях.</p>
+
+      <h2 id="sec-7"><span>7.</span> Аккадское qaštu: лук как геометрическая форма</h2>
+      <p>В старовавилонской математической традиции аккадское qaštu(m) (лук) засвидетельствовано также как геометрический термин. Лексикографический корпус (DCCMT/ORACC) фиксирует его употребление с глоссой “a geometrical figure”. Miguel Civil, разбирая лексикографическое соответствие, определяет его как “arc as a shape” («дуга как форма»). Таким образом, в письменной традиции бронзового века засвидетельствована семантическая область: лук → дуга как форма.</p>
+      <p>Более поздние индоевропейские параллели — например, др.-греч. τόξον (лук / свод), лат. arcus (лук / арка / дуга) и др.-арм. աղեղ(ն) (лук / дуга) — демонстрируют типологическую повторяемость и когнитивную естественность такого семантического сближения, однако историческим фундаментом для текста бронзового века остается именно старовавилонский материал.</p>
+
+      <h2 id="sec-8"><span>8.</span> Непрямое использование пиктограмм</h2>
+      <p>Принцип использования изображения за пределами его прямого предметного значения имеет надежные анатолийские и ближневосточные параллели:</p>
+      <ul class="article-list">
+        <li><strong>Фонетический ребус (парономазия):</strong> В лувийской иероглифике знак LEPUS «заяц» употребляется для записи <em>tapariya-</em> «править» из-за фонетической близости к лувийскому названию зайца <em>tapari-</em>.</li>
+        <li><strong>Семантическая полисемия:</strong> Старовавилонское <em>qaštu</em> демонстрирует перенос по визуально-концептуальному сходству (оружие → геометрия).</li>
+      </ul>
+      <p>Для знака 11 («лук» → «дуга») предполагается именно второй, семантический механизм переноса.</p>
+
+      <h2 id="sec-9"><span>9.</span> Сочетание 39–11</h2>
+      <p>Минимальная структурная комбинация двух знаков (ТРИ + ДУГА) формирует условную формулу: «три в дуге». Два изображения могут обозначать три элемента, организованных в одной дуговой единице (ряду).</p>
+
+      <h2 id="sec-10"><span>10.</span> Применение формулы</h2>
+      <p>Оставшиеся 30 полей стороны A последовательно объединяются по три, образуя матрицу 10×3 (десять рядов). Повторяемость содержимого полей на этапе построения матрицы не используется. Схематически операция показана на рис. 2.</p>
+
+      <div class="table-wrap">
+        <table aria-label="Разбиение 30 основных полей стороны A на десять последовательных троек">
+          <thead>
+            <tr><th>Ряд</th><th>1</th><th>2</th><th>3</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="row-label">1</td><td>A1</td><td>A2</td><td>A3</td></tr>
+            <tr><td class="row-label">2</td><td>A4</td><td>A5</td><td>A6</td></tr>
+            <tr><td class="row-label">3</td><td>A7</td><td>A8</td><td>A9</td></tr>
+            <tr><td class="row-label">4</td><td>A10</td><td>A11</td><td>A12</td></tr>
+            <tr><td class="a13-row" colspan="4">A13 (39–11) — исключено из основного ряда</td></tr>
+            <tr><td class="row-label">5</td><td>A14</td><td>A15</td><td>A16</td></tr>
+            <tr><td class="row-label">6</td><td>A17</td><td>A18</td><td>A19</td></tr>
+            <tr><td class="row-label">7</td><td>A20</td><td>A21</td><td>A22</td></tr>
+            <tr><td class="row-label">8</td><td>A23</td><td>A24</td><td>A25</td></tr>
+            <tr><td class="row-label">9</td><td>A26</td><td>A27</td><td>A28</td></tr>
+            <tr><td class="row-label">10</td><td>A29</td><td>A30</td><td>A31</td></tr>
+          </tbody>
+        </table>
+        <p class="table-caption"><strong>Рис. 2.</strong> Разбиение 30 основных полей стороны A на десять последовательных троек после исключения A13. Порядок полей не изменяется.</p>
+      </div>
+
+      <h2 id="sec-11"><span>11.</span> Точные повторы</h2>
+      <p>Матрица 10×3 для полей A14–A31 с визуальным выделением точных повторов.</p>
+
+      <div class="table-wrap">
+        <table aria-label="Матрица полей A14–A31 с точными повторами">
+          <thead>
+            <tr><th>Ряд</th><th>Позиция 1</th><th>Позиция 2</th><th>Позиция 3</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-label">5</td>
+              <td class="repeat-blue"><span class="field-id">A14</span><span class="field-seq">02-27-25-10-23-18</span></td>
+              <td class="repeat-purple"><span class="field-id">A15</span><span class="field-seq">28-01</span></td>
+              <td class="repeat-green"><span class="field-id">A16</span><span class="field-seq">02-12-31-26</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">6</td>
+              <td class="repeat-yellow"><span class="field-id">A17</span><span class="field-seq">02-12-27-27-35-37-21</span></td>
+              <td><span class="field-id">A18</span><span class="field-seq">33-23</span></td>
+              <td class="repeat-green"><span class="field-id">A19</span><span class="field-seq">02-12-31-26</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">7</td>
+              <td class="repeat-blue"><span class="field-id">A20</span><span class="field-seq">02-27-25-10-23-18</span></td>
+              <td class="repeat-purple"><span class="field-id">A21</span><span class="field-seq">28-01</span></td>
+              <td class="repeat-green"><span class="field-id">A22</span><span class="field-seq">02-12-31-26</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">8</td>
+              <td><span class="field-id">A23</span><span class="field-seq">02-12-27-14-32-18-27</span></td>
+              <td><span class="field-id">A24</span><span class="field-seq">06-18-17-19</span></td>
+              <td><span class="field-id">A25</span><span class="field-seq">31-26-12</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">9</td>
+              <td><span class="field-id">A26</span><span class="field-seq">02-12-13-01</span></td>
+              <td><span class="field-id">A27</span><span class="field-seq">23-19-35</span></td>
+              <td class="repeat-peach"><span class="field-id">A28</span><span class="field-seq">10-03-38</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">10</td>
+              <td class="repeat-yellow"><span class="field-id">A29</span><span class="field-seq">02-12-27-27-35-37-21</span></td>
+              <td><span class="field-id">A30</span><span class="field-seq">13-01</span></td>
+              <td class="repeat-peach"><span class="field-id">A31</span><span class="field-seq">10-03-38</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-caption"><strong>Таблица 1.</strong> Матрица полей A14–A31. Одинаковая заливка обозначает полностью идентичные повторяющиеся поля.</p>
+      </div>
+
+      <p>Повторы: A14=A20, A15=A21, A16=A19=A22, A17=A29, A28=A31.</p>
+      <p>При проверке учитываются только полностью идентичные поля. В матрице 10×3 обнаруживаются пять типов точных повторов:</p>
+      <ul class="article-list">
+        <li>02-27-25-10-23-18 (A14, A20) — Столбец 1</li>
+        <li>28-01 (A15, A21) — Столбец 2</li>
+        <li>02-12-31-26 (A16, A19, A22) — Столбец 3</li>
+        <li>02-12-27-27-35-37-21 (A17, A29) — Столбец 1</li>
+        <li>10-03-38 (A28, A31) — Столбец 3</li>
+      </ul>
+      <p>Все пять типов сохраняют вертикальную позицию. Семь из семи попарных совпадений конгруэнтны modulo 3. Выраженное через дистанции между повторами, это свойство выглядит как ряд: 6, 6, 3, 6, 3, 12, 3. Все расстояния строго кратны трём.</p>
+
+      <h2 id="sec-12"><span>12.</span> Блок A14–A22</h2>
+      <p>Система максимально наглядна в центральном блоке (ряды 5–7), где ряды 5 и 7 совпадают полностью (X–Y–Z), а в ряду 6 сохраняется элемент третьей позиции (W–Q–Z). Трёхчленное разбиение выявляет систематическую позиционную организацию.</p>
+
+      <h2 id="sec-13"><span>13.</span> Контроль других разбиений</h2>
+      <p>Среди всех прямоугольных делителей числа 30 только ширина 3 сохраняет вертикальную позицию всех точных повторов (7/7 пар). Число три было выведено из морфологии знака 39 до перебора вариантов. В простой нулевой модели случайной перестановки вероятность такого позиционного распределения составляет около 0,09 %.</p>
+
+      <h2 id="sec-14"><span>14.</span> Что именно представляет собой A13?</h2>
+      <p>Полученный результат допускает три прагматические модели:</p>
+      <ol class="numbered-list">
+        <li><strong>Операционный ключ:</strong> A13 императивно предписывает способ организации («разбей по три»).</li>
+        <li><strong>Структурная метка:</strong> A13 описывает уже существующий композиционный принцип Стороны А (заголовок/маркер).</li>
+        <li><strong>Имманентный ритм:</strong> Периодичность modulo 3 является синтаксическим или формульным свойством самого текста, а форма A13 — случайным визуальным совпадением. Порядок исследования (число 3 было предложено до выявления выравнивания) делает сценарий случайной подгонки маловероятным, но не исключает его полностью.</li>
+      </ol>
+
+      <h2 id="sec-15"><span>15.</span> Альтернатива технической вставки</h2>
+      <p>Геометрия A13 допускает объяснение поля как технического исправления (пропущенного текста). Однако эта модель объясняет исключительно физическую форму вставки. Она не предсказывает связи между содержимым A13 и операцией, которая при применении к остальным 30 полям выявляет их трёхчленную позиционную организацию.</p>
+
+      <h2 id="sec-16"><span>16.</span> Сторона B</h2>
+      <p>Сторона B содержит 30 полей изначально, но её точные повторы не образуют вертикальной конгруэнтности в матрице 10×3. Асимметрия замысла остается открытым вопросом. Гипотеза ограничивается утверждением, что A13 — это структурный элемент Стороны A, и не претендует на статус универсального ключа ко всему памятнику.</p>
+
+      <h2 id="sec-17"><span>17.</span> Число 30 и календарная интерпретация</h2>
+      <p>Симметрия 30:30 естественно ставит вопрос о возможной календарной интерпретации числа 30. Marianna Ridderstad независимо сопоставляла 30 групп диска с 30-дневным месяцем. Новизна предлагаемого подхода в том, что календарное число 30 возникает не через предварительную астрономическую трактовку знаков, а структурно — посредством удаления геометрической аномалии.</p>
+
+      <h2 id="sec-18"><span>18.</span> Структурная ремарка: 13, 12 и 30</h2>
+      <p>В качестве факультативной внешней параллели фиксируется сочетание чисел 13, 12 и 30. Современное деление эклиптики по границам созвездий включает Ophiuchus как тринадцатое эклиптическое созвездие, тогда как математический зодиак состоит из 12 равных секторов по 30°. В структуре стороны A независимо возникает формально сопоставимая последовательность: дополнительный элемент → 12 основных внешних полей → итоговое число 30 после его исключения. Исторического вывода из этого совпадения здесь не делается.</p>
+
+      <h2 id="sec-19"><span>19.</span> Проверяемое предсказание и проблема прагматики</h2>
+      <p>Модель содержит встроенный критерий фальсификации. Если дальнейший анализ знака 39 в других контекстах потребует значений, принципиально несовместимых с числом три или трёхчленностью, гипотеза структурного ключа будет опровергнута.</p>
+      <p>Однако следует строго разграничивать две задачи: верификацию значения знака 39 и определение прагматического статуса поля A13 (модели 14.1, 14.2 и 14.3). Если числовое значение знака 39 независимо подтвердится, модель случайного визуального совпадения существенно потеряет правдоподобие, а основной выбор сместится к двум оставшимся вариантам: операционному ключу и дескриптивной структурной метке.</p>
+
+      <h2 id="sec-20"><span>20.</span> Пределы вывода</h2>
+      <p>Предлагаемая структурная модель не является лингвистической дешифровкой. Она не устанавливает язык диска, фонетику знаков или точный грамматический синтаксис. Переход «лук → дуга» подкреплен старовавилонской параллелью и типологическими данными, но не доказывает существования идентичной лексемы в языке минойского Крита.</p>
+
+      <h2 id="sec-21"><span>21.</span> Заключение</h2>
+      <p>Независимо выделенная геометрическая аномалия A13 нарушает симметрию диска (31:30). Удаление поля её восстанавливает (30:30). Чтение знаков поля через полисемию бронзового века («три в дуге») и применение этой формулы к оставшемуся тексту формирует матрицу 10×3, в которой все пять типов точных повторов сохраняют одну и ту же позицию modulo 3 на дистанциях, кратных трём. Совокупность этих наблюдений придаёт интерпретации A13 как структурно значимого метатекстового элемента существенно большую объяснительную силу, чем гипотезе чисто технической вставки, поскольку последняя объясняет необычную форму поля, но не предсказывает обнаруживаемую после его исключения трёхчленную позиционную организацию.</p>
+
+      <section class="notes">
+        <h2>Примечания</h2>
+        <ul class="notes-list">
+          <li>[1] Revazyan, A. (2026). <em>Weaving the Beginning: A Textile Model for the Five-Dot Opening Marker on the Phaistos Disc.</em> Zenodo. <a href="https://doi.org/10.5281/zenodo.22236687" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.22236687</a>.</li>
+          <li>[2] В первоначальной статье Reczko дополнительное малое поле в одном месте было ошибочно отнесено к стороне B. В опубликованном <em>erratum</em> исправлено на сторону A.</li>
+          <li>[3] Reczko связывал 18 внутренних полей с циклом Сароса и пытался включить дополнительное малое поле в ту же астрономическую модель. Настоящая работа использует только его независимое геометрическое наблюдение.</li>
+          <li>[4] Средняя продолжительность синодического месяца составляет около 29,53 суток; поэтому 29- и 30-дневные месяцы естественны для лунных календарных систем. Ridderstad получала календарные величины посредством исключения иных полей и предварительной интерпретации отдельных знаков. Эта процедура здесь не используется.</li>
+          <li>[5] Статистический контроль основан на простой модели случайного размещения и не моделирует синтаксис, грамматику или композицию реального текста. Значение около 0,09 % относится только к событию, при котором все экземпляры каждого из пяти типов полных повторов оказываются внутри одного столбца при фиксированном трёхстолбцовом разбиении.</li>
+          <li>[6] Современные границы созвездий и вавилонская система двенадцати равных зодиакальных знаков являются различными классификациями. Параллель касается структуры 12×30 и положения Ophiuchus за пределами двенадцатизнаковой схемы, а не реконструкции буквального исторического акта его «исключения».</li>
+        </ul>
+      </section>
+    </article>
+
+    <section class="references">
+      <h2>Литература</h2>
+      <ul class="references-list">
+        <li>Revazyan, A. (2026). <em>Weaving the Beginning: A Textile Model for the Five-Dot Opening Marker on the Phaistos Disc.</em> Zenodo. <a href="https://doi.org/10.5281/zenodo.22236687" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.22236687</a>.</li>
+        <li>Pernier, L. (1909). <em>Il Disco di Phaestos con caratteri pittografici (Tav. IX–XIII).</em> Ausonia, 3, 255–302.</li>
+        <li>Reczko, W. (2009). “Analyzing and Dating the Structure of the Phaistos Disk.” <em>Archaeological and Anthropological Sciences</em>, 1, 241–245. <a href="https://doi.org/10.1007/s12520-009-0015-2" target="_blank" rel="noopener">https://doi.org/10.1007/s12520-009-0015-2</a>.</li>
+        <li>Reczko, W. (2009). “Erratum to: Analyzing and Dating the Structure of the Phaistos Disk.” <em>Archaeological and Anthropological Sciences</em>, 1, 247. <a href="https://doi.org/10.1007/s12520-009-0020-5" target="_blank" rel="noopener">https://doi.org/10.1007/s12520-009-0020-5</a>.</li>
+        <li>Ridderstad, M. (2010). “Lunisolar Calendrical Symbolism on the Phaistos Disk.” <em>Anistoriton</em>, 12, In Situ 2.</li>
+        <li>Black, J., George, A., &amp; Postgate, N. (2000). <em>A Concise Dictionary of Akkadian.</em> Wiesbaden: Harrassowitz, s.v. qaštu.</li>
+        <li>Robson, E. (1999). <em>Mesopotamian Mathematics, 2100–1600 BC: Technical Constants in Bureaucracy and Education.</em> Oxford: Clarendon Press.</li>
+        <li>Civil, M. (2003). “Of Bows and Arrows.” <em>Journal of Cuneiform Studies</em>, 55, 49–54.</li>
+        <li>Vertegaal, A. J. J. (2021). “The Phoneticisation of the Luwian Hieroglyphic Writing System.” <em>Hungarian Assyriological Review</em>, 2, 295–312. <a href="https://doi.org/10.52093/hara-202102-00025-000" target="_blank" rel="noopener">https://doi.org/10.52093/hara-202102-00025-000</a>.</li>
+        <li>Bailly, A. (1894). <em>Dictionnaire grec-français.</em> Paris: Hachette, s.v. τόξον.</li>
+        <li>Lewis, C. T., &amp; Short, C. (1879). <em>A Latin Dictionary.</em> Oxford: Clarendon Press, s.v. arcus.</li>
+        <li>Աւետիքեան, Գ., Սիւրմէլեան, Խ., &amp; Աւգերեան, Մ. (1836–1837). <em>Նոր Բառգիրք Հայկազեան Լեզուի.</em> Վենետիկ, s.v. աղեղն.</li>
+        <li>Unicode Consortium. <em>Phaistos Disc, U+101D0–U+101FF.</em></li>
+        <li>de Jong, T. (2019). “A Study of Babylonian Planetary Theory I: The Outer Planets.” <em>Archive for History of Exact Sciences</em>, 73.</li>
+        <li>International Astronomical Union. “Astronomy FAQs: How many constellations are in the zodiac? Does Ophiuchus belong to the zodiac?”</li>
+      </ul>
+    </section>
+
+    <section class="download-panel">
+      <h2>Материалы</h2>
+      <p>Русская веб-версия соответствует исследованию, опубликованному на английском языке как Version v1.</p>
+      <div class="actions">
+        <a class="button primary" href="key-in-the-spiral-ru.pdf">Скачать русскую версию — PDF</a>
+        <a class="button secondary" href="https://doi.org/10.5281/zenodo.22653475" target="_blank" rel="noopener">Оригинальная публикация — Zenodo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Arman Revazyan · Archetypal Linguistics Lab (ALL)
+  </footer>
+</body>
+</html>
