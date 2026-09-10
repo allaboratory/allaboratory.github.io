@@ -150,29 +150,6 @@
       color: #5e5a54;
     }
 
-    .actions {
-      margin-top: 26px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 16px;
-      border: 1px solid #173f73;
-      border-radius: 3px;
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .button.secondary {
-      color: #173f73;
-      background: #fff;
-    }
-
     .front-matter {
       padding: 42px 68px 20px;
     }
@@ -398,6 +375,51 @@
       overflow-wrap: anywhere;
     }
 
+    .materials {
+      margin: 0 68px 54px;
+      padding: 28px 30px 30px;
+      border: 1px solid #ddd8d0;
+      background: #faf9f6;
+    }
+
+    .materials h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      color: #171717;
+    }
+
+    .materials p {
+      margin: 0 0 24px;
+      color: #5b5650;
+    }
+
+    .materials-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border: 1px solid #173f73;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .button.primary {
+      color: #fff;
+      background: #173f73;
+    }
+
+    .button.secondary {
+      color: #173f73;
+      background: #fff;
+    }
+
     footer {
       width: min(920px, calc(100% - 40px));
       margin: -52px auto 50px;
@@ -433,6 +455,12 @@
         padding-right: 24px;
       }
 
+      .materials {
+        margin-left: 24px;
+        margin-right: 24px;
+        padding: 24px 20px;
+      }
+
       .article-header {
         padding-top: 38px;
       }
@@ -450,6 +478,14 @@
       table {
         font-size: 13px;
       }
+
+      .materials-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        text-align: center;
+      }
     }
 
     @media print {
@@ -458,8 +494,8 @@
       }
 
       .site-header,
-      .actions,
       .toc,
+      .materials,
       footer {
         display: none !important;
       }
@@ -520,25 +556,18 @@
 
       <div class="publication-meta">
         <div><strong>Русская версия:</strong> сентябрь 2026</div>
+
         <div>
           <strong>Английская публикация:</strong>
           <em>The Architecture of Writing: The Formulaic Structure of the Phaistos Disc and the Mesopotamian Scribal Tradition</em>, Version v1
         </div>
+
         <div>
           <strong>DOI:</strong>
           <a href="https://doi.org/10.5281/zenodo.22673417" target="_blank" rel="noopener">
             10.5281/zenodo.22673417
           </a>
         </div>
-      </div>
-
-      <div class="actions">
-        <a class="button secondary"
-           href="https://doi.org/10.5281/zenodo.22673417"
-           target="_blank"
-           rel="noopener">
-          English version on Zenodo
-        </a>
       </div>
 
     </header>
@@ -570,11 +599,12 @@
           Выдвигается фальсифицируемая гипотеза о функционировании сочетания
 
           <span class="sign-pair">
-            <span class="pd-sign sign-02" aria-label="знак 02">
+            <span class="pd-sign sign-02">
               <img src="sign_02.png" alt="">
               <span class="sign-label">[02]</span>
             </span>
-            <span class="pd-sign sign-12" aria-label="знак 12">
+
+            <span class="pd-sign sign-12">
               <img src="sign_12.png" alt="">
               <span class="sign-label">[12]</span>
             </span>
@@ -604,39 +634,12 @@
         <p>
           The Phaistos Disc is traditionally compared with other writing systems at the level of the visual resemblance
           of individual pictograms. This paper shifts the focus to the structural and positional organization of the text.
-          On the basis of the strictly limited distribution of signs
-
-          <span class="pd-sign sign-02" aria-label="sign 02">
-            <img src="sign_02.png" alt="">
-            <span class="sign-label">[02]</span>
-          </span>
-
-          and
-
-          <span class="pd-sign sign-12" aria-label="sign 12">
-            <img src="sign_12.png" alt="">
-            <span class="sign-label">[12]</span>
-          </span>,
-
-          as well as a four-row positional block on Side A, a structural comparison is proposed with the formulaic
-          sequence of the Sumerian epic <em>Enmerkar and the Lord of Aratta</em>.
-          A falsifiable hypothesis is put forward regarding the functioning of the combination
-
-          <span class="sign-pair">
-            <span class="pd-sign sign-02" aria-label="sign 02">
-              <img src="sign_02.png" alt="">
-              <span class="sign-label">[02]</span>
-            </span>
-            <span class="pd-sign sign-12" aria-label="sign 12">
-              <img src="sign_12.png" alt="">
-              <span class="sign-label">[12]</span>
-            </span>
-          </span>
-
-          as a name with a geographical classifier.
-          The observations indicate that the Phaistos Disc may reflect not only an original inventory of signs,
-          but also an architecture of writing—a system of scribal rules typologically or historically connected
-          to the Near Eastern cuneiform tradition.
+          On the basis of the strictly limited distribution of signs [02] and [12], as well as a four-row positional block
+          on Side A, a structural comparison is proposed with the formulaic sequence of the Sumerian epic
+          <em>Enmerkar and the Lord of Aratta</em>. A falsifiable hypothesis is put forward regarding the functioning
+          of the combination [02–12] as a name with a geographical classifier. The observations indicate that the
+          Phaistos Disc may reflect not only an original inventory of signs, but also an architecture of writing—a system
+          of scribal rules typologically or historically connected to the Near Eastern cuneiform tradition.
         </p>
 
         <p>
@@ -675,14 +678,14 @@
         <span class="section-no">1.</span>
         Строгое распределение знаков
 
-        <span class="pd-sign sign-02" aria-label="знак 02">
+        <span class="pd-sign sign-02">
           <img src="sign_02.png" alt="">
           <span class="sign-label">[02]</span>
         </span>
 
         и
 
-        <span class="pd-sign sign-12" aria-label="знак 12">
+        <span class="pd-sign sign-12">
           <img src="sign_12.png" alt="">
           <span class="sign-label">[12]</span>
         </span>
@@ -691,7 +694,7 @@
       <p>
         Знак
 
-        <span class="pd-sign sign-02" aria-label="знак 02">
+        <span class="pd-sign sign-02">
           <img src="sign_02.png" alt="">
           <span class="sign-label">[02]</span>
         </span>
@@ -703,7 +706,7 @@
       <p>
         Распределение знака
 
-        <span class="pd-sign sign-12" aria-label="знак 12">
+        <span class="pd-sign sign-12">
           <img src="sign_12.png" alt="">
           <span class="sign-label">[12]</span>
         </span>
@@ -715,25 +718,24 @@
         <li>
           В 13 случаях он следует непосредственно за
 
-          <span class="pd-sign sign-02" aria-label="знак 02">
+          <span class="pd-sign sign-02">
             <img src="sign_02.png" alt="">
             <span class="sign-label">[02]</span>
           </span>,
 
           образуя пару:
 
-          <strong>
-            <span class="sign-pair">
-              <span class="pd-sign sign-02" aria-label="знак 02">
-                <img src="sign_02.png" alt="">
-                <span class="sign-label">[02]</span>
-              </span>
-              <span class="pd-sign sign-12" aria-label="знак 12">
-                <img src="sign_12.png" alt="">
-                <span class="sign-label">[12]</span>
-              </span>
-            </span>…
-          </strong>
+          <span class="sign-pair">
+            <span class="pd-sign sign-02">
+              <img src="sign_02.png" alt="">
+              <span class="sign-label">[02]</span>
+            </span>
+
+            <span class="pd-sign sign-12">
+              <img src="sign_12.png" alt="">
+              <span class="sign-label">[12]</span>
+            </span>
+          </span>…
         </li>
 
         <li>
@@ -745,14 +747,14 @@
       <p>
         Случаев, когда
 
-        <span class="pd-sign sign-12" aria-label="знак 12">
+        <span class="pd-sign sign-12">
           <img src="sign_12.png" alt="">
           <span class="sign-label">[12]</span>
         </span>
 
         занимал бы внутреннюю позицию, не следуя за
 
-        <span class="pd-sign sign-02" aria-label="знак 02">
+        <span class="pd-sign sign-02">
           <img src="sign_02.png" alt="">
           <span class="sign-label">[02]</span>
         </span>,
@@ -762,7 +764,10 @@
       </p>
 
 
-      <h2 id="sec-2"><span class="section-no">2.</span> Четырёхстрочный блок стороны A</h2>
+      <h2 id="sec-2">
+        <span class="section-no">2.</span>
+        Четырёхстрочный блок стороны A
+      </h2>
 
       <p>
         В предыдущем исследовании поле A13 было выведено из основной последовательности
@@ -781,9 +786,11 @@
               <th>Позиция III</th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
               <td class="row-label">4</td>
+
               <td>
                 A10
                 <span class="sign-pair">
@@ -791,7 +798,9 @@
                   <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
                 </span>…
               </td>
+
               <td>A11 01…</td>
+
               <td>
                 A12
                 <span class="sign-pair">
@@ -803,11 +812,17 @@
 
             <tr>
               <td class="row-label">5</td>
+
               <td>
                 A14
-                <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>…
+                <span class="pd-sign sign-02">
+                  <img src="sign_02.png" alt="">
+                  <span class="sign-label">[02]</span>
+                </span>…
               </td>
+
               <td>A15 28…</td>
+
               <td>
                 A16
                 <span class="sign-pair">
@@ -819,6 +834,7 @@
 
             <tr>
               <td class="row-label">6</td>
+
               <td>
                 A17
                 <span class="sign-pair">
@@ -826,7 +842,9 @@
                   <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
                 </span>…
               </td>
+
               <td>A18 33…</td>
+
               <td>
                 A19
                 <span class="sign-pair">
@@ -838,11 +856,17 @@
 
             <tr>
               <td class="row-label">7</td>
+
               <td>
                 A20
-                <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>…
+                <span class="pd-sign sign-02">
+                  <img src="sign_02.png" alt="">
+                  <span class="sign-label">[02]</span>
+                </span>…
               </td>
+
               <td>A21 28…</td>
+
               <td>
                 A22
                 <span class="sign-pair">
@@ -882,7 +906,10 @@
       </ul>
 
 
-      <h2 id="sec-3"><span class="section-no">3.</span> Параллель: «Энмеркар и правитель Аратты»</h2>
+      <h2 id="sec-3">
+        <span class="section-no">3.</span>
+        Параллель: «Энмеркар и правитель Аратты»
+      </h2>
 
       <p>
         В шумерской композиции «Энмеркар и правитель Аратты» (строки 596–599)
@@ -900,6 +927,7 @@
 
       <ul class="article-list">
         <li>Абстрактная схема: A – B – <strong>C</strong> – x/y/z/w.</li>
+
         <li>
           Высокочастотный элемент (aratta<sup>ki</sup>-aš) удерживает неизменную позицию
           в четырех смежных строках при варьирующемся контексте конца строки.
@@ -912,7 +940,10 @@
       </p>
 
 
-      <h2 id="sec-4"><span class="section-no">4.</span> Aratta<sup>ki</sup>: имя и классифицирующий знак</h2>
+      <h2 id="sec-4">
+        <span class="section-no">4.</span>
+        Aratta<sup>ki</sup>: имя и классифицирующий знак
+      </h2>
 
       <p>
         В записи aratta<sup>ki</sup> компонент KI в данной функции является географическим
@@ -931,6 +962,7 @@
       <h2 id="sec-5">
         <span class="section-no">5.</span>
         Географическая рабочая гипотеза для
+
         <span class="sign-pair">
           <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
           <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
@@ -951,16 +983,18 @@
 
       <ul class="article-list">
         <li>
-          <strong>
-            <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
-          </strong>
+          <span class="pd-sign sign-02">
+            <img src="sign_02.png" alt="">
+            <span class="sign-label">[02]</span>
+          </span>
           — идентифицирующий компонент (топоним/этноним).
         </li>
 
         <li>
-          <strong>
-            <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
-          </strong>
+          <span class="pd-sign sign-12">
+            <img src="sign_12.png" alt="">
+            <span class="sign-label">[12]</span>
+          </span>
           — классификатор (детерминатив).
         </li>
       </ul>
@@ -999,15 +1033,22 @@
       </p>
 
 
-      <h2 id="sec-6"><span class="section-no">6.</span> Историографическая конвергенция</h2>
+      <h2 id="sec-6">
+        <span class="section-no">6.</span>
+        Историографическая конвергенция
+      </h2>
 
-      <p>Предлагаемая гипотеза объединяет три независимые линии исследований:</p>
+      <p>
+        Предлагаемая гипотеза объединяет три независимые линии исследований:
+      </p>
 
       <ol class="numbered-list">
         <li>
           <strong>Иконографическая (А. Эванс, Л. Пернье):</strong>
           знак
+
           <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+
           иконографически сопоставлялся с изображениями Pulesatha/Pulasati
           и других этнически отличительных групп Восточного Средиземноморья.
         </li>
@@ -1016,10 +1057,12 @@
           <strong>Позиционная (М. Вентрис):</strong>
           анализируя дистрибуцию, Вентрис еще в 1940 году предположил,
           что комбинация
+
           <span class="sign-pair">
             <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
             <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
           </span>
+
           может быть «персональным детерминативом или чем-то подобным».
         </li>
 
@@ -1036,7 +1079,10 @@
       </p>
 
 
-      <h2 id="sec-7"><span class="section-no">7.</span> Плотность классификаторов в формульном тексте</h2>
+      <h2 id="sec-7">
+        <span class="section-no">7.</span>
+        Плотность классификаторов в формульном тексте
+      </h2>
 
       <p>
         На Фестском диске сочетание
@@ -1067,9 +1113,14 @@
       </p>
 
 
-      <h2 id="sec-8"><span class="section-no">8.</span> Уровни структурного сходства</h2>
+      <h2 id="sec-8">
+        <span class="section-no">8.</span>
+        Уровни структурного сходства
+      </h2>
 
-      <p>Сравнение Диска с клинописным эпосом выявляет сходство на трех уровнях:</p>
+      <p>
+        Сравнение Диска с клинописным эпосом выявляет сходство на трех уровнях:
+      </p>
 
       <ul class="article-list">
         <li>
@@ -1080,7 +1131,9 @@
         <li>
           <strong>Писцовые механизмы:</strong>
           жёсткое позиционное распределение
+
           <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+
           допускает функциональное сопоставление с семантическими детерминативами древневосточного письма.
         </li>
 
@@ -1094,7 +1147,10 @@
       </ul>
 
 
-      <h2 id="sec-9"><span class="section-no">9.</span> Архитектура письма (синтез)</h2>
+      <h2 id="sec-9">
+        <span class="section-no">9.</span>
+        Архитектура письма (синтез)
+      </h2>
 
       <p>
         Данная статья — третья в серии исследований, смещающих анализ Диска
@@ -1103,7 +1159,10 @@
       </p>
 
       <ul class="article-list">
-        <li><strong>Паратекст:</strong> маркирование начала надписи особым комплексом (5 точек).</li>
+        <li>
+          <strong>Паратекст:</strong>
+          маркирование начала надписи особым комплексом (5 точек).
+        </li>
 
         <li>
           <strong>Макроструктура:</strong>
@@ -1133,9 +1192,14 @@
       </p>
 
 
-      <h2 id="sec-10"><span class="section-no">10.</span> Альтернативные модели</h2>
+      <h2 id="sec-10">
+        <span class="section-no">10.</span>
+        Альтернативные модели
+      </h2>
 
-      <p>Географическая интерпретация — рабочая гипотеза. Возможны альтернативы:</p>
+      <p>
+        Географическая интерпретация — рабочая гипотеза. Возможны альтернативы:
+      </p>
 
       <ul class="article-list">
         <li>
@@ -1154,7 +1218,9 @@
           — корень.
         </li>
 
-        <li>Типологическая случайность.</li>
+        <li>
+          Типологическая случайность.
+        </li>
       </ul>
 
       <p>
@@ -1176,9 +1242,14 @@
       </p>
 
 
-      <h2 id="sec-11"><span class="section-no">11.</span> Условия фальсификации (проверяемые следствия)</h2>
+      <h2 id="sec-11">
+        <span class="section-no">11.</span>
+        Условия фальсификации (проверяемые следствия)
+      </h2>
 
-      <p>Гипотеза может быть протестирована:</p>
+      <p>
+        Гипотеза может быть протестирована:
+      </p>
 
       <ol class="numbered-list">
         <li>
@@ -1204,7 +1275,10 @@
       </ol>
 
 
-      <h2 id="sec-12"><span class="section-no">12.</span> Пределы вывода</h2>
+      <h2 id="sec-12">
+        <span class="section-no">12.</span>
+        Пределы вывода
+      </h2>
 
       <p>
         Предлагаемая модель <strong>не является дешифровкой</strong>.
@@ -1215,7 +1289,10 @@
       </p>
 
 
-      <h2 id="sec-13"><span class="section-no">13.</span> Заключение</h2>
+      <h2 id="sec-13">
+        <span class="section-no">13.</span>
+        Заключение
+      </h2>
 
       <p>
         Исходной точкой настоящего исследования стало строгое позиционное распределение знаков
@@ -1333,6 +1410,36 @@
         </li>
 
       </ol>
+
+    </section>
+
+
+    <section class="materials">
+
+      <h2>Материалы</h2>
+
+      <p>
+        Русская веб-версия соответствует исследованию,
+        опубликованному на английском языке как Version v1.
+      </p>
+
+      <div class="materials-actions">
+
+        <a class="button primary"
+           href="architecture-of-writing-ru.pdf"
+           target="_blank"
+           rel="noopener">
+          Скачать русскую версию — PDF
+        </a>
+
+        <a class="button secondary"
+           href="https://doi.org/10.5281/zenodo.22673417"
+           target="_blank"
+           rel="noopener">
+          Оригинальная публикация — Zenodo
+        </a>
+
+      </div>
 
     </section>
 
