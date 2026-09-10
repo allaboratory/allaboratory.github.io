@@ -200,6 +200,45 @@
       color: #504d48;
     }
 
+    .pd-sign {
+      display: inline-flex;
+      align-items: flex-end;
+      gap: .07em;
+      white-space: nowrap;
+      vertical-align: -0.16em;
+      line-height: 1;
+      margin: 0 .03em;
+    }
+
+    .pd-sign img {
+      display: block;
+      width: auto;
+      max-width: none;
+    }
+
+    .pd-sign.sign-02 img {
+      height: 1.32em;
+    }
+
+    .pd-sign.sign-12 img {
+      height: 1.18em;
+    }
+
+    .sign-label {
+      font-size: .66em;
+      line-height: 1;
+      color: #5a5752;
+      margin-bottom: .02em;
+    }
+
+    .sign-pair {
+      display: inline-flex;
+      align-items: flex-end;
+      gap: .10em;
+      white-space: nowrap;
+      vertical-align: -0.16em;
+    }
+
     details {
       margin-top: 28px;
       padding: 16px 18px;
@@ -265,11 +304,11 @@
       padding-top: 18px;
       border-top: 1px solid #ebe8e2;
       font-size: 26px;
-      line-height: 1.28;
+      line-height: 1.35;
       color: #171717;
     }
 
-    .article-body h2 span {
+    .article-body h2 span.section-no {
       color: #777169;
       font-weight: 400;
     }
@@ -285,18 +324,6 @@
       margin: .4em 0;
       text-align: justify;
       hyphens: auto;
-    }
-
-    .scheme {
-      margin: 1.35em auto;
-      padding: 15px 20px;
-      max-width: 720px;
-      text-align: center;
-      background: #f7f5f1;
-      border: 1px solid #e5e0d8;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: .01em;
     }
 
     .text-block {
@@ -524,12 +551,39 @@
         <p>
           Фестский диск традиционно сравнивают с другими системами письма на уровне внешнего сходства отдельных пиктограмм.
           Настоящая работа смещает фокус на структурную и позиционную организацию текста.
-          На основе жестко ограниченного распределения знаков [02] и [12], а также четырехстрочного позиционного блока
-          на стороне A, предлагается структурное сопоставление с формульной последовательностью шумерского эпоса
-          «Энмеркар и правитель Аратты». Выдвигается фальсифицируемая гипотеза о функционировании сочетания [02][12]
-          как имени с географическим классификатором. Наблюдения указывают на то, что Фестский диск может отражать
-          не только оригинальный набор знаков, но и архитектуру письма — систему писцовых правил, типологически
-          или исторически связанную с ближневосточной клинописной традицией.
+          На основе жестко ограниченного распределения знаков
+
+          <span class="pd-sign sign-02" aria-label="знак 02">
+            <img src="sign_02.png" alt="">
+            <span class="sign-label">[02]</span>
+          </span>
+
+          и
+
+          <span class="pd-sign sign-12" aria-label="знак 12">
+            <img src="sign_12.png" alt="">
+            <span class="sign-label">[12]</span>
+          </span>,
+
+          а также четырехстрочного позиционного блока на стороне A, предлагается структурное сопоставление
+          с формульной последовательностью шумерского эпоса «Энмеркар и правитель Аратты».
+          Выдвигается фальсифицируемая гипотеза о функционировании сочетания
+
+          <span class="sign-pair">
+            <span class="pd-sign sign-02" aria-label="знак 02">
+              <img src="sign_02.png" alt="">
+              <span class="sign-label">[02]</span>
+            </span>
+            <span class="pd-sign sign-12" aria-label="знак 12">
+              <img src="sign_12.png" alt="">
+              <span class="sign-label">[12]</span>
+            </span>
+          </span>
+
+          как имени с географическим классификатором.
+          Наблюдения указывают на то, что Фестский диск может отражать не только оригинальный набор знаков,
+          но и архитектуру письма — систему писцовых правил, типологически или исторически связанную
+          с ближневосточной клинописной традицией.
         </p>
       </div>
 
@@ -550,12 +604,39 @@
         <p>
           The Phaistos Disc is traditionally compared with other writing systems at the level of the visual resemblance
           of individual pictograms. This paper shifts the focus to the structural and positional organization of the text.
-          On the basis of the strictly limited distribution of signs [02] and [12], as well as a four-row positional block
-          on Side A, a structural comparison is proposed with the formulaic sequence of the Sumerian epic
-          <em>Enmerkar and the Lord of Aratta</em>. A falsifiable hypothesis is put forward regarding the functioning
-          of the combination [02–12] as a name with a geographical classifier. The observations indicate that the
-          Phaistos Disc may reflect not only an original inventory of signs, but also an architecture of writing—a system
-          of scribal rules typologically or historically connected to the Near Eastern cuneiform tradition.
+          On the basis of the strictly limited distribution of signs
+
+          <span class="pd-sign sign-02" aria-label="sign 02">
+            <img src="sign_02.png" alt="">
+            <span class="sign-label">[02]</span>
+          </span>
+
+          and
+
+          <span class="pd-sign sign-12" aria-label="sign 12">
+            <img src="sign_12.png" alt="">
+            <span class="sign-label">[12]</span>
+          </span>,
+
+          as well as a four-row positional block on Side A, a structural comparison is proposed with the formulaic
+          sequence of the Sumerian epic <em>Enmerkar and the Lord of Aratta</em>.
+          A falsifiable hypothesis is put forward regarding the functioning of the combination
+
+          <span class="sign-pair">
+            <span class="pd-sign sign-02" aria-label="sign 02">
+              <img src="sign_02.png" alt="">
+              <span class="sign-label">[02]</span>
+            </span>
+            <span class="pd-sign sign-12" aria-label="sign 12">
+              <img src="sign_12.png" alt="">
+              <span class="sign-label">[12]</span>
+            </span>
+          </span>
+
+          as a name with a geographical classifier.
+          The observations indicate that the Phaistos Disc may reflect not only an original inventory of signs,
+          but also an architecture of writing—a system of scribal rules typologically or historically connected
+          to the Near Eastern cuneiform tradition.
         </p>
 
         <p>
@@ -570,19 +651,19 @@
         <h2>Содержание</h2>
 
         <ol>
-          <li><a href="#sec-1"><span>1.</span> Строгое распределение знаков [02] и [12]</a></li>
-          <li><a href="#sec-2"><span>2.</span> Четырёхстрочный блок стороны A</a></li>
-          <li><a href="#sec-3"><span>3.</span> Параллель: «Энмеркар и правитель Аратты»</a></li>
-          <li><a href="#sec-4"><span>4.</span> Aratta<sup>ki</sup>: имя и классифицирующий знак</a></li>
-          <li><a href="#sec-5"><span>5.</span> Географическая рабочая гипотеза для [02][12]</a></li>
-          <li><a href="#sec-6"><span>6.</span> Историографическая конвергенция</a></li>
-          <li><a href="#sec-7"><span>7.</span> Плотность классификаторов в формульном тексте</a></li>
-          <li><a href="#sec-8"><span>8.</span> Уровни структурного сходства</a></li>
-          <li><a href="#sec-9"><span>9.</span> Архитектура письма</a></li>
-          <li><a href="#sec-10"><span>10.</span> Альтернативные модели</a></li>
-          <li><a href="#sec-11"><span>11.</span> Условия фальсификации</a></li>
-          <li><a href="#sec-12"><span>12.</span> Пределы вывода</a></li>
-          <li><a href="#sec-13"><span>13.</span> Заключение</a></li>
+          <li><a href="#sec-1">1. Строгое распределение знаков 02 и 12</a></li>
+          <li><a href="#sec-2">2. Четырёхстрочный блок стороны A</a></li>
+          <li><a href="#sec-3">3. Параллель: «Энмеркар и правитель Аратты»</a></li>
+          <li><a href="#sec-4">4. Aratta<sup>ki</sup>: имя и классифицирующий знак</a></li>
+          <li><a href="#sec-5">5. Географическая рабочая гипотеза для 02–12</a></li>
+          <li><a href="#sec-6">6. Историографическая конвергенция</a></li>
+          <li><a href="#sec-7">7. Плотность классификаторов в формульном тексте</a></li>
+          <li><a href="#sec-8">8. Уровни структурного сходства</a></li>
+          <li><a href="#sec-9">9. Архитектура письма</a></li>
+          <li><a href="#sec-10">10. Альтернативные модели</a></li>
+          <li><a href="#sec-11">11. Условия фальсификации</a></li>
+          <li><a href="#sec-12">12. Пределы вывода</a></li>
+          <li><a href="#sec-13">13. Заключение</a></li>
         </ol>
       </nav>
 
@@ -590,30 +671,98 @@
 
     <article class="article-body">
 
-      <h2 id="sec-1"><span>1.</span> Строгое распределение знаков [02] и [12]</h2>
+      <h2 id="sec-1">
+        <span class="section-no">1.</span>
+        Строгое распределение знаков
+
+        <span class="pd-sign sign-02" aria-label="знак 02">
+          <img src="sign_02.png" alt="">
+          <span class="sign-label">[02]</span>
+        </span>
+
+        и
+
+        <span class="pd-sign sign-12" aria-label="знак 12">
+          <img src="sign_12.png" alt="">
+          <span class="sign-label">[12]</span>
+        </span>
+      </h2>
 
       <p>
-        Знак [02] является самым частотным на Диске (19 употреблений).
+        Знак
+
+        <span class="pd-sign sign-02" aria-label="знак 02">
+          <img src="sign_02.png" alt="">
+          <span class="sign-label">[02]</span>
+        </span>
+
+        является самым частотным на Диске (19 употреблений).
         Его позиция абсолютно однородна: во всех 19 случаях он стоит первым в поле.
       </p>
 
       <p>
-        Распределение знака [12] (17 употреблений) подчиняется двум жестким контекстам:
+        Распределение знака
+
+        <span class="pd-sign sign-12" aria-label="знак 12">
+          <img src="sign_12.png" alt="">
+          <span class="sign-label">[12]</span>
+        </span>
+
+        (17 употреблений) подчиняется двум жестким контекстам:
       </p>
 
       <ul class="article-list">
-        <li>В 13 случаях он следует непосредственно за [02], образуя пару: <strong>[02][12]…</strong></li>
-        <li>В оставшихся 4 случаях (поля A2, A6, A25, B5) он находится в <strong>абсолютном конце поля</strong>.</li>
+        <li>
+          В 13 случаях он следует непосредственно за
+
+          <span class="pd-sign sign-02" aria-label="знак 02">
+            <img src="sign_02.png" alt="">
+            <span class="sign-label">[02]</span>
+          </span>,
+
+          образуя пару:
+
+          <strong>
+            <span class="sign-pair">
+              <span class="pd-sign sign-02" aria-label="знак 02">
+                <img src="sign_02.png" alt="">
+                <span class="sign-label">[02]</span>
+              </span>
+              <span class="pd-sign sign-12" aria-label="знак 12">
+                <img src="sign_12.png" alt="">
+                <span class="sign-label">[12]</span>
+              </span>
+            </span>…
+          </strong>
+        </li>
+
+        <li>
+          В оставшихся 4 случаях (поля A2, A6, A25, B5) он находится в
+          <strong>абсолютном конце поля</strong>.
+        </li>
       </ul>
 
       <p>
-        Случаев, когда [12] занимал бы внутреннюю позицию, не следуя за [02], на Диске нет.
-        На данном этапе это исключительно структурный факт, которому не приписывается
-        фонетическое или семантическое значение.
+        Случаев, когда
+
+        <span class="pd-sign sign-12" aria-label="знак 12">
+          <img src="sign_12.png" alt="">
+          <span class="sign-label">[12]</span>
+        </span>
+
+        занимал бы внутреннюю позицию, не следуя за
+
+        <span class="pd-sign sign-02" aria-label="знак 02">
+          <img src="sign_02.png" alt="">
+          <span class="sign-label">[02]</span>
+        </span>,
+
+        на Диске нет. На данном этапе это исключительно структурный факт,
+        которому не приписывается фонетическое или семантическое значение.
       </p>
 
 
-      <h2 id="sec-2"><span>2.</span> Четырёхстрочный блок стороны A</h2>
+      <h2 id="sec-2"><span class="section-no">2.</span> Четырёхстрочный блок стороны A</h2>
 
       <p>
         В предыдущем исследовании поле A13 было выведено из основной последовательности
@@ -635,27 +784,72 @@
           <tbody>
             <tr>
               <td class="row-label">4</td>
-              <td>A10 <strong>[02][12]</strong>…</td>
+              <td>
+                A10
+                <span class="sign-pair">
+                  <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+                  <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+                </span>…
+              </td>
               <td>A11 01…</td>
-              <td>A12 <strong>[02][12]</strong>…</td>
+              <td>
+                A12
+                <span class="sign-pair">
+                  <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+                  <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+                </span>…
+              </td>
             </tr>
+
             <tr>
               <td class="row-label">5</td>
-              <td>A14 <strong>[02]</strong>…</td>
+              <td>
+                A14
+                <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>…
+              </td>
               <td>A15 28…</td>
-              <td>A16 <strong>[02][12]</strong>…</td>
+              <td>
+                A16
+                <span class="sign-pair">
+                  <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+                  <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+                </span>…
+              </td>
             </tr>
+
             <tr>
               <td class="row-label">6</td>
-              <td>A17 <strong>[02][12]</strong>…</td>
+              <td>
+                A17
+                <span class="sign-pair">
+                  <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+                  <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+                </span>…
+              </td>
               <td>A18 33…</td>
-              <td>A19 <strong>[02][12]</strong>…</td>
+              <td>
+                A19
+                <span class="sign-pair">
+                  <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+                  <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+                </span>…
+              </td>
             </tr>
+
             <tr>
               <td class="row-label">7</td>
-              <td>A20 <strong>[02]</strong>…</td>
+              <td>
+                A20
+                <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>…
+              </td>
               <td>A21 28…</td>
-              <td>A22 <strong>[02][12]</strong>…</td>
+              <td>
+                A22
+                <span class="sign-pair">
+                  <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+                  <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+                </span>…
+              </td>
             </tr>
           </tbody>
         </table>
@@ -664,8 +858,21 @@
       <p><em>Особенности блока:</em></p>
 
       <ul class="article-list">
-        <li>Во всех четырех строках первое поле начинается на [02] (в двух случаях с последующим [12]).</li>
-        <li>Третье поле (Позиция III) <em>неизменно</em> начинается сочетанием [02][12].</li>
+        <li>
+          Во всех четырех строках первое поле начинается на
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          (в двух случаях с последующим
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>).
+        </li>
+
+        <li>
+          Третье поле (Позиция III) <em>неизменно</em> начинается сочетанием
+          <span class="sign-pair">
+            <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+            <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+          </span>.
+        </li>
+
         <li>
           Блок содержит полные точные повторы (A14=A20, A15=A21, A16=A19=A22).
           Контрольная проверка показывает: если не удалять A13 из текста, поля сдвигаются,
@@ -675,7 +882,7 @@
       </ul>
 
 
-      <h2 id="sec-3"><span>3.</span> Параллель: «Энмеркар и правитель Аратты»</h2>
+      <h2 id="sec-3"><span class="section-no">3.</span> Параллель: «Энмеркар и правитель Аратты»</h2>
 
       <p>
         В шумерской композиции «Энмеркар и правитель Аратты» (строки 596–599)
@@ -705,7 +912,7 @@
       </p>
 
 
-      <h2 id="sec-4"><span>4.</span> Aratta<sup>ki</sup>: имя и классифицирующий знак</h2>
+      <h2 id="sec-4"><span class="section-no">4.</span> Aratta<sup>ki</sup>: имя и классифицирующий знак</h2>
 
       <p>
         В записи aratta<sup>ki</sup> компонент KI в данной функции является географическим
@@ -721,53 +928,99 @@
       </p>
 
 
-      <h2 id="sec-5"><span>5.</span> Географическая рабочая гипотеза для [02][12]</h2>
+      <h2 id="sec-5">
+        <span class="section-no">5.</span>
+        Географическая рабочая гипотеза для
+        <span class="sign-pair">
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+        </span>
+      </h2>
 
       <p>
         Возвращаясь к Фестскому диску, мы можем сформулировать структурную аналогию.
-        Что, если жестко позиционированная пара [02][12] представляет собой обозначение
-        этногеографической сущности по древневосточной модели?
+        Что, если жестко позиционированная пара
+
+        <span class="sign-pair">
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+        </span>
+
+        представляет собой обозначение этногеографической сущности по древневосточной модели?
       </p>
 
       <ul class="article-list">
-        <li><strong>[02]</strong> — идентифицирующий компонент (топоним/этноним).</li>
-        <li><strong>[12]</strong> — классификатор (детерминатив).</li>
+        <li>
+          <strong>
+            <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          </strong>
+          — идентифицирующий компонент (топоним/этноним).
+        </li>
+
+        <li>
+          <strong>
+            <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+          </strong>
+          — классификатор (детерминатив).
+        </li>
       </ul>
 
       <p>
-        Сила этой гипотезы в ее объяснительном охвате. Она предлагает единое объяснение
-        всем 17 употреблениям [12], связывает 13 случаев [02][12] с их позиционным поведением
-        и допускает функциональную интерпретацию четырёх оставшихся случаев.
+        Сила этой гипотезы в ее объяснительном охвате.
+        Она предлагает единое объяснение всем 17 употреблениям
+
+        <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>,
+
+        связывает 13 случаев
+
+        <span class="sign-pair">
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+        </span>
+
+        с их позиционным поведением и допускает функциональную интерпретацию четырёх оставшихся случаев.
       </p>
 
       <p>
-        Если [12] — классификатор, то поля, оканчивающиеся на него (A2, A6, A25, B5),
+        Если
+
+        <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+
+        — классификатор, то поля, оканчивающиеся на него (A2, A6, A25, B5),
         становятся кандидатами на принадлежность к той же семантической сфере.
-        Они могут скрывать либо другие топонимы (где [12] работает как классификатор),
-        либо самостоятельное употребление знака [12] в его базовом нарицательном значении
-        (например, «земля», «страна» или «место»).
+        Они могут скрывать либо другие топонимы, где
+
+        <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+
+        работает как классификатор, либо самостоятельное употребление этого знака
+        в его базовом нарицательном значении (например, «земля», «страна» или «место»).
         Обе функции — детерминативная и самостоятельная лексическая —
         органично совмещались в древневосточных системах письма.
       </p>
 
 
-      <h2 id="sec-6"><span>6.</span> Историографическая конвергенция</h2>
+      <h2 id="sec-6"><span class="section-no">6.</span> Историографическая конвергенция</h2>
 
-      <p>
-        Предлагаемая гипотеза объединяет три независимые линии исследований:
-      </p>
+      <p>Предлагаемая гипотеза объединяет три независимые линии исследований:</p>
 
       <ol class="numbered-list">
         <li>
           <strong>Иконографическая (А. Эванс, Л. Пернье):</strong>
-          знак [02] иконографически сопоставлялся с изображениями Pulesatha/Pulasati
+          знак
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          иконографически сопоставлялся с изображениями Pulesatha/Pulasati
           и других этнически отличительных групп Восточного Средиземноморья.
         </li>
 
         <li>
           <strong>Позиционная (М. Вентрис):</strong>
           анализируя дистрибуцию, Вентрис еще в 1940 году предположил,
-          что комбинация [02][12] может быть «персональным детерминативом или чем-то подобным».
+          что комбинация
+          <span class="sign-pair">
+            <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+            <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+          </span>
+          может быть «персональным детерминативом или чем-то подобным».
         </li>
 
         <li>
@@ -783,12 +1036,18 @@
       </p>
 
 
-      <h2 id="sec-7"><span>7.</span> Плотность классификаторов в формульном тексте</h2>
+      <h2 id="sec-7"><span class="section-no">7.</span> Плотность классификаторов в формульном тексте</h2>
 
       <p>
-        На Фестском диске сочетание [02][12] встречается 13 раз
-        (в основной структуре это 13 из 60 полей, т.е. ~21,6%).
-        Если [02][12] действительно представляет повторяющееся географическое обозначение,
+        На Фестском диске сочетание
+
+        <span class="sign-pair">
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+        </span>
+
+        встречается 13 раз (в основной структуре это 13 из 60 полей, т.е. ~21,6%).
+        Если эта комбинация действительно представляет повторяющееся географическое обозначение,
         является ли частота 13 употреблений аномальной для короткого текста?
       </p>
 
@@ -808,11 +1067,9 @@
       </p>
 
 
-      <h2 id="sec-8"><span>8.</span> Уровни структурного сходства</h2>
+      <h2 id="sec-8"><span class="section-no">8.</span> Уровни структурного сходства</h2>
 
-      <p>
-        Сравнение Диска с клинописным эпосом выявляет сходство на трех уровнях:
-      </p>
+      <p>Сравнение Диска с клинописным эпосом выявляет сходство на трех уровнях:</p>
 
       <ul class="article-list">
         <li>
@@ -822,8 +1079,9 @@
 
         <li>
           <strong>Писцовые механизмы:</strong>
-          жёсткое позиционное распределение [12] допускает функциональное сопоставление
-          с семантическими детерминативами древневосточного письма.
+          жёсткое позиционное распределение
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+          допускает функциональное сопоставление с семантическими детерминативами древневосточного письма.
         </li>
 
         <li>
@@ -836,7 +1094,7 @@
       </ul>
 
 
-      <h2 id="sec-9"><span>9.</span> Архитектура письма <span>(синтез)</span></h2>
+      <h2 id="sec-9"><span class="section-no">9.</span> Архитектура письма (синтез)</h2>
 
       <p>
         Данная статья — третья в серии исследований, смещающих анализ Диска
@@ -845,10 +1103,7 @@
       </p>
 
       <ul class="article-list">
-        <li>
-          <strong>Паратекст:</strong>
-          маркирование начала надписи особым комплексом (5 точек).
-        </li>
+        <li><strong>Паратекст:</strong> маркирование начала надписи особым комплексом (5 точек).</li>
 
         <li>
           <strong>Макроструктура:</strong>
@@ -857,7 +1112,13 @@
 
         <li>
           <strong>Микроструктура:</strong>
-          строгие позиционные ограничения для знаков [02] и [12].
+          строгие позиционные ограничения для знаков
+
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+
+          и
+
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>.
         </li>
 
         <li>
@@ -872,40 +1133,70 @@
       </p>
 
 
-      <h2 id="sec-10"><span>10.</span> Альтернативные модели</h2>
+      <h2 id="sec-10"><span class="section-no">10.</span> Альтернативные модели</h2>
 
-      <p>
-        Географическая интерпретация — рабочая гипотеза. Возможны альтернативы:
-      </p>
+      <p>Географическая интерпретация — рабочая гипотеза. Возможны альтернативы:</p>
 
       <ul class="article-list">
-        <li>[02][12] — обычная высокочастотная лексическая единица, титул или грамматическая конструкция.</li>
-        <li>Инверсия: [02] — классификатор, а [12] — корень.</li>
+        <li>
+          <span class="sign-pair">
+            <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+            <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+          </span>
+          — обычная высокочастотная лексическая единица, титул или грамматическая конструкция.
+        </li>
+
+        <li>
+          Инверсия:
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          — классификатор, а
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+          — корень.
+        </li>
+
         <li>Типологическая случайность.</li>
       </ul>
 
       <p>
         Преимущество предложенной модели не в доказанности перевода, а в ее объяснительной силе:
-        она предлагает единое объяснение всем 17 употреблениям [12], связывает 13 случаев [02][12]
+        она предлагает единое объяснение всем 17 употреблениям
+
+        <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>,
+
+        связывает 13 случаев
+
+        <span class="sign-pair">
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+        </span>
+
         с их позиционным поведением и допускает функциональную интерпретацию четырёх оставшихся случаев,
         находя хронологически релевантные функциональные параллели
         в древневосточных писцовых практиках.
       </p>
 
 
-      <h2 id="sec-11"><span>11.</span> Условия фальсификации <span>(проверяемые следствия)</span></h2>
+      <h2 id="sec-11"><span class="section-no">11.</span> Условия фальсификации (проверяемые следствия)</h2>
 
-      <p>
-        Гипотеза может быть протестирована:
-      </p>
+      <p>Гипотеза может быть протестирована:</p>
 
       <ol class="numbered-list">
         <li>
           <strong>Функциональное родство остатка:</strong>
-          четыре поля, оканчивающиеся на [12] (без предшествующего [02]),
+          четыре поля, оканчивающиеся на
+
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+
+          (без предшествующего
+
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>),
+
           должны обнаруживать функциональную или контекстуальную связь
           с той же семантической областью.
-          Гипотеза будет опровергнута, если в других контекстах знак [12]
+          Гипотеза будет опровергнута, если в других контекстах знак
+
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+
           потребует значений, принципиально несовместимых с географической
           или пространственной сферой — как в роли детерминатива для других имен,
           так и в роли самостоятельной лексической единицы со значением «земля/страна».
@@ -913,7 +1204,7 @@
       </ol>
 
 
-      <h2 id="sec-12"><span>12.</span> Пределы вывода</h2>
+      <h2 id="sec-12"><span class="section-no">12.</span> Пределы вывода</h2>
 
       <p>
         Предлагаемая модель <strong>не является дешифровкой</strong>.
@@ -924,13 +1215,25 @@
       </p>
 
 
-      <h2 id="sec-13"><span>13.</span> Заключение</h2>
+      <h2 id="sec-13"><span class="section-no">13.</span> Заключение</h2>
 
       <p>
-        Исходной точкой настоящего исследования стало строгое позиционное распределение
-        знаков [02] и [12]. Наложение этой дистрибуции на ранее установленную
-        триадическую структуру стороны A выявило устойчивый четырехстрочный блок,
-        в котором неизменно воспроизводится сочетание [02][12].
+        Исходной точкой настоящего исследования стало строгое позиционное распределение знаков
+
+        <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+
+        и
+
+        <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>.
+
+        Наложение этой дистрибуции на ранее установленную триадическую структуру стороны A
+        выявило устойчивый четырехстрочный блок, в котором неизменно воспроизводится сочетание
+
+        <span class="sign-pair">
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+        </span>.
+
         Сопоставление этого участка с формульными строками эпоса об Энмеркаре
         показало сходный композиционный принцип, в котором стабильную позицию
         удерживает элемент с географическим классификатором.
@@ -938,8 +1241,14 @@
 
       <p>
         Синтез этого структурного наблюдения с ранними иконографическими и позиционными
-        догадками позволяет рассматривать пару [02][12] как кандидата на имя
-        или обозначение с этногеографическим классификатором.
+        догадками позволяет рассматривать пару
+
+        <span class="sign-pair">
+          <span class="pd-sign sign-02"><img src="sign_02.png" alt=""><span class="sign-label">[02]</span></span>
+          <span class="pd-sign sign-12"><img src="sign_12.png" alt=""><span class="sign-label">[12]</span></span>
+        </span>
+
+        как кандидата на имя или обозначение с этногеографическим классификатором.
         Главный итог серии работ состоит в смене уровня анализа:
         происхождение Фестского диска следует искать не только в форме его знаков,
         но и в системе правил, определяющих их позицию, сочетание и функцию внутри текста.
